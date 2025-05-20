@@ -1,44 +1,49 @@
-# 🌿 Leaf Disease Detection using CNN
+# 🌿 Leaf Disease Detection using Deep Learning (CNN)
 
-A deep learning project to automatically detect and classify plant leaf diseases using a Convolutional Neural Network (CNN) trained on the **PlantVillage** dataset.
-
----
-
-## 📌 Project Overview
-
-This project aims to assist farmers, agricultural researchers, and hobbyists in identifying plant leaf diseases quickly and accurately through image classification.
-
-Using a CNN model, the system learns visual patterns of healthy and diseased leaves and predicts the disease category when a new image is provided.
+Accurate identification of plant leaf diseases using a custom-trained Convolutional Neural Network (CNN). This project leverages the **PlantVillage dataset** to classify various types of leaf diseases and assist in early detection and treatment.
 
 ---
 
-## 🧠 Model Architecture
+## 🔍 Project Objective
 
-- Input Image Size: `64x64` (resized and normalized)
-- Layers:
-  - Multiple `Conv2D` + `ReLU` + `MaxPooling`
-  - `Flatten`
-  - Dense layers with `Softmax` at the end for multi-class classification
-- Loss Function: `categorical_crossentropy`
-- Optimizer: `Adam`
+To develop a deep learning model that can:
+
+- Detect diseases in plant leaf images
+- Classify the disease into predefined categories
+- Assist farmers and agriculturists with timely diagnosis
 
 ---
 
-## 📁 Dataset
+## 🧠 Model Summary
 
-- Dataset used: **PlantVillage Dataset**
-- Categories: Healthy, Leaf Blight, Leaf Spot, Rust, etc.
-- Image Split:
-  - Training Set: 80%
-  - Validation Set: 20%
-- Images were resized and normalized for consistent model input.
+- **Model Type:** Convolutional Neural Network (CNN)
+- **Input Size:** 64×64 RGB images
+- **Core Layers:**
+  - Multiple `Conv2D + ReLU + MaxPooling`
+  - `Flatten → Dense Layers → Softmax`
+- **Loss Function:** `Categorical Crossentropy`
+- **Optimizer:** `Adam`
+
+- **Accuracy Achieved:** **94.57%**
+- **Metrics:** `Accuracy`
 
 ---
 
-## 🚀 How to Run
+## 🗃️ Dataset Details
 
-1. Clone this repository:
+- **Source:** [PlantVillage Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease)
+- **Classes:** Healthy, Leaf Spot, Leaf Blight, Rust, and more
+- **Total Images:** ~50,000
+- **Split:**
+  - **80% Training**
+  - **20% Validation**
 
-   ```bash
-   git clone https://github.com/your-username/leaf-disease-detection.git
-   cd leaf-disease-detection
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/leaf-disease-detection.git
+cd leaf-disease-detection
